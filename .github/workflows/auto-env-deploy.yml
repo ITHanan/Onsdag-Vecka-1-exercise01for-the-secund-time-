@@ -1,0 +1,22 @@
+name: Exercise 4 😎 Auto Environment Deploy
+
+on:
+  push:
+    branches:
+      - '**'     
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+   
+    environment:
+      name: ${{ github.ref_name == 'main' && 'prod' || 'dev' }}
+
+    steps:
+      - name: Print branch
+        run: echo "Branch :${{ github.ref_name }}"
+
+      - name: Print selected environment
+        run: |
+          echo "Selected environment: ${{ github.ref_name == 'main' && 'prod' || 'dev' }}"
