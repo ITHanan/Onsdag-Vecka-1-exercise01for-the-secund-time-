@@ -1,10 +1,11 @@
-name: Dummy Deploy
+name:  Exercise 1 Dummy Deploy
 
 on:
   workflow_dispatch:
 
 jobs:
   deploy:
+    name: 😊 Deploy to environment
     runs-on: ubuntu-latest
     environment: development   
 
