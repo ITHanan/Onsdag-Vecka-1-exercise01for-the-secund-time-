@@ -8,3 +8,7 @@ gör en dummy workflow som bara printar “deploy to ${{ github.environment }}�
 
 
 testing main deploy
+
+testing main deploy to test Exercise 4
+
+
