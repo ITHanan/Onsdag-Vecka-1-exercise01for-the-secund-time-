@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: 🤓 Print service name
-        run: echo "Deploying:${{ vars.SERVICE_NAME }}"
+        run: echo "Deploying :${{ vars.SERVICE_NAME }}"
