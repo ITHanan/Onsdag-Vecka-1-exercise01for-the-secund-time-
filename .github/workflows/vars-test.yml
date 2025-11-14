@@ -1,0 +1,13 @@
+name: Exercise 3 😊 Variable Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: development
+
+    steps:
+      - name: 🤓 Print service name
+        run: echo "Deploying:${{ vars.SERVICE_NAME }}"
