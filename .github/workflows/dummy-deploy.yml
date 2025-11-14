@@ -7,7 +7,7 @@ jobs:
   deploy:
     name: 😊 Deploy to environment
     runs-on: ubuntu-latest
-    environment: development   
+    environment: production   
 
     steps:
       - name: Print environment
