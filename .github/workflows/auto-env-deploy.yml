@@ -11,7 +11,7 @@ jobs:
 
    
     environment:
-      name: ${{ github.ref_name == 'main' && 'prod' || 'dev' }}
+      name: ${{ github.ref_name == 'main' && 'production' || 'development' }}
 
     steps:
       - name: Print branch
@@ -19,4 +19,4 @@ jobs:
 
       - name: Print selected environment
         run: |
-          echo "Selected environment: ${{ github.ref_name == 'main' && 'prod' || 'dev' }}"
+          echo "Selected environment: ${{ github.ref_name == 'main' && 'production' || 'development' }}"
