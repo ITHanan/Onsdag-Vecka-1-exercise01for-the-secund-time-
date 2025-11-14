@@ -8,3 +8,6 @@ gör en dummy workflow som bara printar “deploy to ${{ github.environment }}�
 
 
 testing main deploy
+
+Commit directly to main 
+
