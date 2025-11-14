@@ -25,5 +25,10 @@ om branch är annan → deploy to dev environment
 
 testing main deploy
 
+
+testing main deploy to test Exercise 4
+
+
 Commit directly to main 
+
 
